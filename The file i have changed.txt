@@ -1,0 +1,8 @@
+add_table_and_coke_can.launch  (in exmpl_models)
+coord_vision_manip.launch  (in part_6/coordinator)
+baxter_on_pedestal_w_kinect.launch  (in part_6/baxter_variations)
+pre_pose_right_coke_can  (in part_5/baxter/baxter_playfole_nodes)
+object_finder_as.cpp  (in part_3/object_finder/src)
+rethink_gripper_rt_manip_fncs.cpp  (in part_3/object_manipulation_properties)
+grab_coke_can_client.cpp  (in part_6/coordinator)
+dropoff_coke_can_client.cpp  (in part_6/coordinator)
