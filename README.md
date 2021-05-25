@@ -1,19 +1,13 @@
 # learning_ros
-This repository accompanies the text "A Systematic Approach to Learning Robot Programming with ROS".  This version has been updated for ROS Kinetic.
+This is a course project that contains the main program that makes the baxter robot grab the coke can from the side and put it down.
 
-Code examples reside in folders corresponding to chapters.
+To run this file, we need to first enter the following commands:
 
-This entire repository should be cloned to: ~/ros_ws/src (assuming your ros workspace is named "ros_ws" and resides within your home directory).  To do so, navigate to ~/ros_ws/src from a terminal and enter:
-`git clone https://github.com/wsnewman/learning_ros_noetic.git`
-and also clone the external packages used with:
-`git clone -r https://github.com/wsnewman/learning_ros_external_packages_noetic.git`
+1:$ roslaunch gazebo_ros empty_world.launch
+2:$ roslaunch baxter_variations baxter_on_pedestal_w_kinect.launch
+3:$ roslaunch coordinator coord_vision_manip.launch
+4:$ rosrun coordinator grab_coke_can_client
+5:$ rosrun coordinator dropoff_coke_can_client
 
-Then, from a terminal, navigate to ~/ros_ws and compile the code with the command:
-`catkin_make`
-
-If you are installing ROS for the first time, see the instructions here:
-[installation scripts](//github.com/wsnewman/learning_ros_setup_scripts)
-
-The scripts located at this site automate installation of ROS (consistent with the version and packages used with the learning-ROS code examples).  These scripts also install a variety of useful tools.
 
 
